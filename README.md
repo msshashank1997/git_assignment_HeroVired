@@ -26,6 +26,24 @@ This repository demonstrates the usage of Git Large File Storage (LFS) for handl
    cd git_assignment_HeroVired
    ```
 
+1. List existing tags (optional, to check current tags)
+
+   ```
+   git tag
+   ```
+
+2. Create a new tag
+
+   ```
+   git tag -a v1.0.0 -m "First stable release"
+   ```
+
+3. Push the tag to GitHub
+   
+   ```
+   git push origin v1.0.0
+   ```
+   
 2. Create and checkout to the 'lfs' branch:
    ```bash
    git checkout -b lfs

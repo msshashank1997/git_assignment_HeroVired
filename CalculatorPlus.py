@@ -11,7 +11,10 @@ class Calculator:
         return a * b
 
     def divide(self, a, b):
-        return a / b
+        if b == 0:
+            raise ValueError("Cannot divide by zero")
+        else:
+            return a / b
     # TODO: Implement the following function to calculate the square root of a number.
     def square_root(self, x):
         return math.sqrt(x)
@@ -30,3 +33,9 @@ if __name__ == "__main__":
     # Test square root feature
     num3 = 25
     print(f"The square root of {num3} = {calculator.square_root(num3)}")
+
+    calculator = GeometryCalculator()
+    
+    length = 10
+    width = 6
+    print(f"The area of the rectangle with length {length} and width {width} = {calculator.calculate_rectangle_area(length, width)}")
