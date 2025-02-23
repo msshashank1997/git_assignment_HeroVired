@@ -16,8 +16,8 @@ class Calculator:
         else:
             return a / b
     # TODO: Implement the following function to calculate the square root of a number.
-    # def square_root(self, x):
-    #   return math.sqrt(x)
+    def square_root(self, x):
+        return math.sqrt(x)
 
 if __name__ == "__main__":
     calculator = Calculator()
@@ -31,5 +31,5 @@ if __name__ == "__main__":
     print(f"{num1} / {num2} = {calculator.divide(num1, num2)}")
 
     # Test square root feature
-    # num3 = 25
-    # print(f"The square root of {num3} = {calculator.square_root(num3)}")
+    num3 = 25
+    print(f"The square root of {num3} = {calculator.square_root(num3)}")
